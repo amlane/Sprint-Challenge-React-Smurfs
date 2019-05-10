@@ -2,6 +2,7 @@ import React from 'react';
 
 function SmurfPage(props){
     const smurf = props.smurfs.find( smurf => `${smurf.id}` === props.match.params.id )
+    if (!smurf) return <h3>loading data...</h3>;
     console.log(props, smurf)
     return (
         <div>
