@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class Smurf extends React.Component{
   constructor(props){
@@ -8,7 +9,7 @@ class Smurf extends React.Component{
   render(){
   return (
     <div className="Smurf">
-      <h3>{this.props.name}</h3>
+     <Link to={`/smurf/${this.props.id}`}><h3>{this.props.name}</h3></Link> 
       <strong>{this.props.height} tall</strong>
       <p>{this.props.age} smurf years old</p>
       <button onClick={e => this.props.deleteSmurf(e, this.props.id)}>X</button>
@@ -17,9 +18,6 @@ class Smurf extends React.Component{
   }
 };
 
-function routeToSmurf(props, smurf){
-  props.history.push(`/smurfs/${smurf.id}`)
-}
 
 Smurf.defaultProps = {
   name: '',
