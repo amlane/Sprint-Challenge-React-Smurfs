@@ -1,3 +1,26 @@
 .App {
   text-align: center;
+  background: #fafafa;
+  opacity: 0.9;
+  width: 800px;
+  margin: 0 auto;
 }
+
+.nav-bar {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+.activeNavButton {
+  text-decoration: underline;
+  background: blue;
+  color: white;
+}
+

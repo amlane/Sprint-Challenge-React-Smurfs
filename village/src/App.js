@@ -53,9 +53,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <nav>
-          <NavLink exact to="/">Village</NavLink>{' '}
-          <NavLink to="/smurf-form">Add New Smurf</NavLink>
+        <nav className="nav-bar">
+          <NavLink exact to="/" activeClassName="activeNavButton">Village</NavLink>{' '}
+          <NavLink to="/smurf-form" activeClassName="activeNavButton">Add New Smurf</NavLink>
         </nav>
 
         <Route 
