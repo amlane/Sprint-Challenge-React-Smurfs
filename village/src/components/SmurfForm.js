@@ -22,6 +22,7 @@ class SmurfForm extends Component {
     e.preventDefault();
     console.log("clicked")
     this.props.addSmurf(this.state)
+    this.props.history.push('/')
   }
 
   render() {
