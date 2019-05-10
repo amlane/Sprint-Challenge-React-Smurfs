@@ -6,7 +6,7 @@ function SmurfPage(props){
     return (
         <div>
             <div className="character-info-wrapper">
-                <h1>Name: {smurf.name}</h1>
+                <h3>Name: {smurf.name}</h3>
                 <h4>Age: ({smurf.age})</h4> 
                 <h4>Height: ({smurf.height})</h4> 
             </div>

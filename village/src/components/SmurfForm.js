@@ -27,7 +27,9 @@ class SmurfForm extends Component {
   render() {
     return (
       <div className="SmurfForm">
-        <form onSubmit={this.addSmurf}>
+        <form className="form-container" onSubmit={this.addSmurf}>
+        <h1>Add a new smurf to the village!</h1>
+        <div className="input-container">
           <input
             onChange={this.handleInputChange}
             placeholder="name"
@@ -46,7 +48,8 @@ class SmurfForm extends Component {
             value={this.state.height}
             name="height"
           />
-          <button type="submit">Add to the village</button>
+          <button className="form-btn" type="submit">Add to the village</button>
+          </div>
         </form>
       </div>
     );

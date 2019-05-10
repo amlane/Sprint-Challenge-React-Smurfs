@@ -7,7 +7,7 @@ function Smurf(props){
      <Link to={`/smurfs/${props.id}`}><h3>{props.name}</h3></Link> 
       <strong>{props.height} tall</strong>
       <p>{props.age} smurf years old</p>
-      <button onClick={e => props.deleteSmurf(e, props.id)}>X</button>
+      <button className="dlt-btn" onClick={e => props.deleteSmurf(e, props.id)}>X</button>
     </div>
   );
 };
