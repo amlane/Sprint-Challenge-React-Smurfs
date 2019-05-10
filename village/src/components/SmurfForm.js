@@ -13,7 +13,7 @@ class SmurfForm extends Component {
   handleInputChange = e => {
     this.setState({ 
       ...this.state,
-      [e.target.name]: e.target.value 
+      [e.target.name]: e.target.value
     });
   };
 
