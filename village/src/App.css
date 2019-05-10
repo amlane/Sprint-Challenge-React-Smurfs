@@ -4,7 +4,7 @@
   opacity: 0.8;
   width: 800px;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
 }
 
 .nav-bar {
@@ -21,7 +21,7 @@ a {
 
 .activeNavButton {
   text-decoration: underline;
-  background: blue;
+  background: black;
   color: white;
 }
 
@@ -37,7 +37,7 @@ ul {
 }
 
 .Smurf {
-  border: 1px solid silver;
+  border: 1px solid black;
   margin: 10px;
   width: 200px;
   padding: 20px;
@@ -67,7 +67,7 @@ ul {
   justify-content: space-around;
   align-items: center;
   height: 200px;
-  padding-top: 60px;
+  padding-top: 200px;
 }
 
 .input-container {
@@ -75,7 +75,7 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid;
+  border: 1px solid black;
   padding: 20px;
   width: 400px;
 }
@@ -85,15 +85,25 @@ input {
   border-top: none;
   border-right: none;
   border-left: none;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid black;
   width: 250px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
 }
 
 .form-btn {
   width: 140px;
   background: transparent;
-  border: 2px solid blue;
-  color: blue;
+  border: 2px solid black;
+  color: black;
   padding: 10px;
   border-radius: 20px;
   font-weight: bold;
