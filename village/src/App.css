@@ -1,3 +1,123 @@
 .App {
   text-align: center;
+  background: #fafafa;
+  opacity: 0.8;
+  width: 800px;
+  margin: 0 auto;
+  height: 100%;
 }
+
+.nav-bar {
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: black;
+}
+
+.activeNavButton {
+  text-decoration: underline;
+  background: black;
+  color: white;
+}
+
+h1 {
+  font-family: 'Fredoka One', cursive;
+  font-size: 3rem;
+}
+ 
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Smurf {
+  border: 1px solid black;
+  margin: 10px;
+  width: 200px;
+  padding: 20px;
+}
+
+.dlt-btn {
+  background: red;
+  border: none;
+  border-radius: 50%;
+  padding: 5px 8px;
+  color: white;
+}
+
+.dlt-btn:hover {
+  cursor: pointer;
+}
+
+.SmurfForm {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  padding-top: 200px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid black;
+  padding: 20px;
+  width: 400px;
+}
+
+input {
+  margin: 20px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid black;
+  width: 250px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.form-btn {
+  width: 100px;
+  border: 2px solid black;
+  color: black;
+  padding: 10px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.form-btn:focus {
+  outline: none;
+}
+
+.form-btn:hover {
+  cursor: pointer;
+}
+
+
+
+
+
